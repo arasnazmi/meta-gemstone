@@ -8,17 +8,21 @@ LICENSE = "Apache-2.0"
 PACKAGE_INSTALL = "\
     ${VIRTUAL-RUNTIME_base-utils} \
     base-files \
-    initramfs-framework-base \
-    initramfs-module-rootfs \
-    initramfs-module-firstboot \
-    initramfs-module-usbgadget \
-    initramfs-module-gemfinish \
-    parted \
-    e2fsprogs-resize2fs \
     btrfs-tools \
-    kernel-module-usb-f-acm \
-    kernel-module-u-serial \
+    e2fsprogs-resize2fs \
+    initramfs-framework-base \
+    initramfs-module-disklinks \
+    initramfs-module-firstboot \
+    initramfs-module-gemfinish \
+    initramfs-module-rootfs \
+    initramfs-module-swupartconf \
+    initramfs-module-usbgadget \
     kernel-module-libcomposite \
+    kernel-module-u-serial \
+    kernel-module-usb-f-acm \
+    libubootenv \
+    libubootenv-bin \
+    parted \
     "
 
 PACKAGE_INSTALL:remove:qemuarm64 = "kernel-module-usb-f-acm kernel-module-u-serial kernel-module-libcomposite"
