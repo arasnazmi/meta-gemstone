@@ -2,7 +2,7 @@ SUMMARY = "Meta package for building an installable Qt6 toolchain and SDK for Ge
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-inherit populate_sdk populate_sdk_qt6
+inherit ${@bb.utils.contains('DISTRO_GEMSTONE_QT_INCLUDED', '1', 'populate_sdk populate_sdk_qt6', 'populate_sdk', d)}
 
 TOOLCHAIN_TARGET_TASK += "\
     libegl-mesa-dev \

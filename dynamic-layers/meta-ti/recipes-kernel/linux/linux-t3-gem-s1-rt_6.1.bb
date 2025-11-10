@@ -2,11 +2,11 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}-6.1:"
 
 SECTION = "kernel"
-SUMMARY = "T3 Gemstone O1 Linux Kernel"
+SUMMARY = "T3 Gemstone S1 Linux Kernel"
 LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
-COMPATIBLE_MACHINE = "t3-gem-o1"
+COMPATIBLE_MACHINE = "t3-gem-s1"
 
 inherit kernel
 

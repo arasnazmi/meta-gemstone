@@ -18,4 +18,5 @@ BBLAYERS ?= " \
   ${GEMSTONE_WORKDIR}/yocto/meta-qt6 \
   ${GEMSTONE_WORKDIR}/yocto/meta-openembedded/meta-oe \
   ${GEMSTONE_WORKDIR}/yocto/meta-openembedded/meta-python \
+  ${GEMSTONE_WORKDIR}/yocto/meta-openembedded/meta-networking \
   "
