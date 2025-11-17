@@ -1,0 +1,2 @@
+part --source bootimg-partition --fstype=vfat --label boot --active --align 1024 --use-uuid --fixed-size 128M
+part / --source rootfs --fstype=btrfs --label root --align 1024 --use-uuid

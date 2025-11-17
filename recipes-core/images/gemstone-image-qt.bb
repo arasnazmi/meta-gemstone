@@ -12,9 +12,9 @@ IMAGE_FEATURES += "\
     debug-tweaks \
     "
 
-IMAGE_BOOT_FILES:append = " uEnv.txt"
+TI_IMAGE_BOOT_FILES = "k3-am67a-${MACHINE}.dtb gemstone-image-rd-${MACHINE}.cpio.gz ${KERNEL_IMAGETYPE}"
 
-TI_IMAGE_BOOT_FILES = "k3-am67a-beagley-ai.dtb"
+WKS_FILE = "t3-gem-o1-btrfs.wks"
 
 IMAGE_BOOT_FILES:append:t3-gem-o1 = " ${TI_IMAGE_BOOT_FILES}"
 IMAGE_BOOT_FILES:append:t3-gem-s1 = " ${TI_IMAGE_BOOT_FILES}"
